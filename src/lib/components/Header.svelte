@@ -1,4 +1,6 @@
 <script>
+  import { base } from '$app/paths';
+
   let menuOpen = false;
   function toggleMenu() {
     menuOpen = !menuOpen;
@@ -12,9 +14,9 @@
       <span class="text-xl font-bold">Студентски Съвет при ТУ-София</span>
     </div>
     <nav class="hidden md:flex space-x-6">
-      <a href="/" class="text-gray-700 hover:text-blue-500">Начало</a>
-      <a href="/news" class="text-gray-700 hover:text-blue-500">Новини</a>
-      <a href="/about" class="text-gray-700 hover:text-blue-500">За нас</a>
+      <a href="{base}/" class="text-gray-700 hover:text-blue-500">Начало</a>
+      <a href="{base}/news" class="text-gray-700 hover:text-blue-500">Новини</a>
+      <a href="{base}/about" class="text-gray-700 hover:text-blue-500">За нас</a>
     </nav>
     <button
       class="md:hidden text-gray-700 hover:text-blue-500 focus:outline-none"
@@ -39,17 +41,17 @@
   {#if menuOpen}
     <div class="md:hidden px-4 pt-4 pb-2 space-y-2">
       <a
-        href="/"
+        href="{base}/"
         class="block text-gray-700 hover:text-blue-500"
         on:click={() => (menuOpen = false)}>Начало</a
       >
       <a
-        href="/news"
+        href="{base}/news"
         class="block text-gray-700 hover:text-blue-500"
         on:click={() => (menuOpen = false)}>Новини</a
       >
       <a
-        href="/about"
+        href="{base}/about"
         class="block text-gray-700 hover:text-blue-500"
         on:click={() => (menuOpen = false)}>За нас</a
       >
