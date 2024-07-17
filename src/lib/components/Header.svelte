@@ -10,7 +10,7 @@
 <header class="bg-white shadow-md">
   <div class="container mx-auto px-4 py-4 flex justify-between items-center">
     <div class="flex items-center">
-      <img src="/favicon.ico" alt="SC Logo" class="h-10 mr-4" />
+      <img src="{base}/favicon.ico" alt="SC Logo" class="h-10 mr-4" />
       <span class="text-xl font-bold">Студентски Съвет при ТУ-София</span>
     </div>
     <nav class="hidden md:flex space-x-6">
